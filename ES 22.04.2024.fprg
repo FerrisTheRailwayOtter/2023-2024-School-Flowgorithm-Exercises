@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lukem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-22 07:11:13 "/>
+        <attribute name="created" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMjI7IjA2OjUxOjA2ICI7MjgyNA=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMjI7IjA3OjExOjEzICI7MTsyOTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numeri, Somma, Max, Media, Cont, Numero1" type="Integer" array="False" size=""/>
+            <assign variable="Somma" expression="0"/>
+            <assign variable="Numeri" expression="0"/>
+            <assign variable="Max" expression="0"/>
+            <assign variable="Media" expression="0"/>
+            <assign variable="Cont" expression="0"/>
+            <do expression="Numeri&lt;20">
+                <output expression="&quot;Inserire un numero positivo maggiore di 20&quot;" newline="True"/>
+                <input variable="Numeri"/>
+            </do>
+            <while expression="Cont&lt;Numeri">
+                <output expression="&quot;Inserire un numero multiplo di 7&quot;" newline="True"/>
+                <input variable="Numero1"/>
+                <if expression="Numero1%7==0">
+                    <then>
+                        <assign variable="Cont" expression="Cont+1"/>
+                        <assign variable="Somma" expression="Somma+numero1"/>
+                        <if expression="Max&gt;Numero1">
+                            <then/>
+                            <else>
+                                <assign variable="Max" expression="Numero1"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;ERRORE Numero non multiplo di 7&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="Media" expression="Somma/Numeri"/>
+            <output expression="&quot;Il Valore massimo e' &quot; &amp;Max" newline="True"/>
+            <output expression="&quot;La somma e' &quot; &amp;Somma" newline="True"/>
+            <output expression="&quot;La Media e' &quot; &amp;Media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

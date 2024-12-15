@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lukem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 04:22:59 PM"/>
+        <attribute name="created" value="bHVrZW07REVTS1RPUC1NMTdUODAyOzIwMjQtMDMtMTk7MDQ6MTA6MDYgUE07MjgyMA=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC1NMTdUODAyOzIwMjQtMDMtMTk7MDQ6MjI6NTkgUE07MTsyOTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero1, Numero2, Numero3, Somma" type="Integer" array="False" size=""/>
+            <output expression="&quot;inserire il primo numero&quot;" newline="True"/>
+            <input variable="Numero1"/>
+            <output expression="&quot;inserire il secondo numero&quot;" newline="True"/>
+            <input variable="Numero2"/>
+            <output expression="&quot;inserire il terzo numero&quot;" newline="True"/>
+            <input variable="Numero3"/>
+            <assign variable="Somma" expression="Numero1+Numero2+Numero3"/>
+            <if expression="Numero1&gt;Numero2">
+                <then>
+                    <if expression="Numero1&gt;Numero3">
+                        <then>
+                            <output expression="&quot;la somma dei tre valori &#232; &quot; &amp;Somma" newline="True"/>
+                            <output expression="&quot;e il valore max &#232; &quot;  &amp;Numero1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;la somma dei tre valori &#232; &quot; &amp;Somma" newline="True"/>
+                            <output expression="&quot;e il valore max &#232; &quot;  &amp;Numero3" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Numero2&gt;Numero3">
+                        <then>
+                            <output expression="&quot;la somma dei tre valori &#232; &quot; &amp;Somma" newline="True"/>
+                            <output expression="&quot;e il valore max &#232; &quot;  &amp;Numero2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;la somma dei tre valori &#232; &quot; &amp;Somma" newline="True"/>
+                            <output expression="&quot;e il valore max &#232; &quot;  &amp;Numero3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

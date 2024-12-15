@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LukeFurkoto5"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-11 03:38:28 PM"/>
+        <attribute name="created" value="THVrZUZ1cmtvdG81O1NIQURPV1dPUkxEOzIwMjQtMDMtMTA7MTE6NTQ6NDIgQU07MzMwNA=="/>
+        <attribute name="edited" value="THVrZUZ1cmtvdG81O1NIQURPV1dPUkxEOzIwMjQtMDMtMTE7MDM6Mzg6MjggUE07MjszNDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Base, Altezza, Risultato" type="Integer" array="False" size=""/>
+            <output expression="&quot;inserire base del triangolo rettangolo&quot;" newline="True"/>
+            <input variable="Base"/>
+            <assign variable="Altezza" expression="Base*2"/>
+            <assign variable="Risultato" expression="(Base*Altezza)/2"/>
+            <output expression="&quot;il risultato &#232; &quot; &amp;Risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

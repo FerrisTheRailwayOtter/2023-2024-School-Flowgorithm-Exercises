@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lukem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-14 11:00:26 "/>
+        <attribute name="created" value="bHVrZW07REVTS1RPUC1UTFFPRVIxOzIwMjQtMDQtMTM7IjAzOjEzOjE5ICI7MjgzMw=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC1UTFFPRVIxOzIwMjQtMDQtMTQ7IjExOjAwOjI2ICI7MjsyOTM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Contatore, Numeri, Num1, Somma" type="Integer" array="False" size=""/>
+            <declare name="Media" type="Real" array="False" size=""/>
+            <assign variable="Contatore" expression="0"/>
+            <assign variable="Numeri" expression="50"/>
+            <assign variable="Somma" expression="0"/>
+            <while expression="Contatore &lt; Numeri">
+                <output expression="&quot;Inserire un numero&quot;" newline="True"/>
+                <input variable="Num1"/>
+                <if expression="Num1%2=0">
+                    <then>
+                        <assign variable="Somma" expression="Somma + Num1"/>
+                        <assign variable="Contatore" expression="Contatore + 1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Errore numero dispari&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="Media" expression="Somma/Numeri"/>
+            <output expression="&quot;La somma e' &quot; &amp;Somma" newline="True"/>
+            <output expression="&quot;La media e' &quot; &amp;Media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

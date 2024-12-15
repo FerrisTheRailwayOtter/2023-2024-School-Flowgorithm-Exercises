@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lukem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-30 07:30:34 "/>
+        <attribute name="created" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMzA7IjA3OjIyOjEyICI7MjgxOQ=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMzA7IjA3OjIzOjI4ICI7MTtsdWtlbTtERVNLVE9QLTFVSU9RQU47MjAyNC0wNC0yMjsiMDY6NTE6MDYgIjtFUyAyMi4wNC4yMDI0LmZwcmc7NzAzMA=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMzA7IjA3OjMwOjM0ICI7MTsyOTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numeri, n1, max, cont" type="Integer" array="False" size=""/>
+            <assign variable="Max" expression="0"/>
+            <assign variable="Cont" expression="0"/>
+            <do expression="Numeri&lt;5">
+                <output expression="&quot;Inserire un numero maggiore di 5&quot;" newline="True"/>
+                <input variable="Numeri"/>
+            </do>
+            <for variable="Cont" start="0" end="Numeri" direction="inc" step="1">
+                <do expression="N1%7!=0">
+                    <output expression="&quot;inserire un numero multiplo di 7&quot;" newline="True"/>
+                    <input variable="N1"/>
+                </do>
+                <if expression="Max&gt;N1">
+                    <then/>
+                    <else>
+                        <assign variable="Max" expression="N1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;il valore max e'&quot; &amp;Max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

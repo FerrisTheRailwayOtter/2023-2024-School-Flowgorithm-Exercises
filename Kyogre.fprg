@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lukem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-07 07:56:31 "/>
+        <attribute name="created" value="bHVrZW07REVTS1RPUC0wNk9EMk85OzIwMjQtMDUtMDc7IjA3OjA0OjAxICI7Mjc0Nw=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC0wNk9EMk85OzIwMjQtMDUtMDc7IjA3OjU2OjMxICI7MTsyODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeri, max, min, cont, n1" type="Integer" array="False" size=""/>
+            <assign variable="N1" expression="0"/>
+            <assign variable="Numeri" expression="0"/>
+            <assign variable="cont" expression="0"/>
+            <assign variable="max" expression="0"/>
+            <assign variable="min" expression="0"/>
+            <do expression="(Numeri&gt;20) and Numeri&lt;10">
+                <output expression="&quot;Inserire un numero tra 10 e 20&quot;" newline="True"/>
+                <input variable="numeri"/>
+            </do>
+            <for variable="n1" start="0" end="numeri" direction="inc" step="1">
+                <output expression="&quot;Inserire un numero multiplo di 5&quot;" newline="True"/>
+                <input variable="n1"/>
+                <if expression="N1%5!=0">
+                    <then>
+                        <output expression="&quot;Numero non multiplo di 5&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="N1&gt;Max">
+                            <then>
+                                <assign variable="Max" expression="N1"/>
+                            </then>
+                            <else>
+                                <if expression="N1&lt;Min">
+                                    <then>
+                                        <assign variable="Min" expression="N1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Il Valore massimo e' &quot; &amp;Max" newline="True"/>
+            <output expression="&quot;Il Valore minimo e' &quot; &amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

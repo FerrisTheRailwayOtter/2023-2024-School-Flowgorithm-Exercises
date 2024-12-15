@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lukem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-30 07:16:48 "/>
+        <attribute name="created" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMzA7IjA3OjA2OjEwICI7MjgxOQ=="/>
+        <attribute name="edited" value="bHVrZW07REVTS1RPUC0xVUlPUUFOOzIwMjQtMDQtMzA7IjA3OjE2OjQ4ICI7MTsyOTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, somma, media" type="Integer" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="media" expression="0"/>
+            <do expression="somma&lt;=1000">
+                <do expression="n1&lt;10">
+                    <output expression="&quot;inserire un numero maggiore di 10&quot;" newline="True"/>
+                    <input variable="n1"/>
+                    <assign variable="somma" expression="somma+n1"/>
+                </do>
+            </do>
+            <assign variable="media" expression="somma/n1"/>
+            <output expression="&quot;la somma dei numeri e' &quot; &amp;Somma" newline="True"/>
+            <output expression="&quot;la media dei numeri e' &quot; &amp;Media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
